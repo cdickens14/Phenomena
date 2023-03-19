@@ -20,6 +20,7 @@ const App = () => {
             
         }
         getReports();
+
     }, []);
 
     const onChange = (event) => {
@@ -60,11 +61,9 @@ return (
               })
 
             }
-
-        </ul>
+         </ul>
             
-
-        <form onSubmit={ createReport }>
+         <form onSubmit={ createReport }>
             <input value={title} onChange={onChange} name='title' placeholder='title'></input>
             <input value={location} onChange={onChange} name='location' placeholder='location'></input>
             <input value={description} onChange={onChange} name='description' placeholder='description'></input>
